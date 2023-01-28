@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\aa\OneDrive\Desktop\Spring Web MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\403846275.index
+\SpringwebMVCfirstApp\src\main\java
+C:\Users\aa\OneDrive\Desktop\Spring Web MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1754773276.index
+\SpringMvcFirstApplication\src\main\resources
+C:\Users\aa\OneDrive\Desktop\Spring Web MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4023809414.index
+\SpringMVCsecondApplication\src\main\java

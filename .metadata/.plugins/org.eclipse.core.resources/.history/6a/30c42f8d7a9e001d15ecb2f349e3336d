@@ -1,0 +1,27 @@
+package com.BikkadIT.SpringwebMVCfirstApp.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.BikkadIT.SpringwebMVCfirstApp.model.booking;
+
+@Controller
+public class Book {
+
+	@GetMapping("/GetBookdata")
+	public String demo(Model model) {
+		
+		
+	booking Booking = new booking();
+	Booking.setBookname("Chemistry");
+	Booking.setBookid(245);
+	Booking.setBookcolour("red");
+	
+	model.addAttribute("Message",Booking);
+	
+	return "colour";
+	}
+	
+	}
+

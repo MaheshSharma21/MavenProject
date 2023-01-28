@@ -1,0 +1,19 @@
+package com.BikkadIT.SpringwebMVCfirstApp.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class welcome {
+	
+	public ModelAndView Simple(@RequestParam String Name ,Model model) {
+		String msg=" Hello "+Name+" Mahesh Sharma ..How Are You ? ";
+		System.out.println(msg);
+		
+		return null;
+		
+	}
+
+}

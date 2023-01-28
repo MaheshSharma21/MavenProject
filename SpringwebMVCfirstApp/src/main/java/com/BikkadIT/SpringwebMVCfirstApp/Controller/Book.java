@@ -1,0 +1,70 @@
+package com.BikkadIT.SpringwebMVCfirstApp.Controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.BikkadIT.SpringwebMVCfirstApp.model.booking;
+
+@Controller
+public class Book {
+
+	@GetMapping("/GetBookdata")
+	public String demo(Model model) {
+		
+		
+	booking Booking = new booking();
+	Booking.setBookname("Chemistry");
+	Booking.setBookid(245);
+	Booking.setBookcolour("red");
+	System.out.println(Booking);
+	model.addAttribute("BookDetails",Booking);
+	
+	return "colour";
+	}
+	
+	@GetMapping("/getAllobjectData")
+	public String Multibooks(Model model) {
+		booking b = new booking();
+		b.setBookid(45);
+		b.setBookname("scjp");
+		b.setBookcolour("brown");
+		
+		booking b1 = new booking();
+		b1.setBookid(46);
+		b1.setBookname("computer");
+		b1.setBookcolour("yellow");
+		
+		booking b2 = new booking();
+		b2.setBookid(47);
+		b2.setBookname("English");
+		b2.setBookcolour("pink");
+		
+		booking b3 = new booking();
+		b3.setBookid(48);
+		b3.setBookname("Sci");
+		b3.setBookcolour("Red");
+		
+		booking b4 = new booking();
+		b4.setBookid(49);
+		b4.setBookname("Physics");
+		b4.setBookcolour("black");
+		
+		List<booking> list = new ArrayList<booking>();
+		list.add(b);
+		list.add(b1);
+		list.add(b2);
+		list.add(b3);
+		list.add(b4);
+		
+		model.addAttribute("multiobj",list);
+		
+		return "drive";
+		
+	}
+	
+	}
+

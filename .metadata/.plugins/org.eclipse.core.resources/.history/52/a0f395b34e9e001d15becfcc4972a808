@@ -1,0 +1,5 @@
+package com.BikkadIT.SpringwebMVCfirstApp.model;
+
+public class booking {
+
+}

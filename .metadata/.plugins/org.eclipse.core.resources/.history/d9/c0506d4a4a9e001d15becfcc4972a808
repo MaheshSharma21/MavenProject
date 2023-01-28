@@ -1,0 +1,26 @@
+package com.BikkadIT.SpringwebMVCfirstApp.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class India {
+
+	@GetMapping("/getdata")
+	public ModelAndView Data() {
+		
+		String msg="hello India";
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("MESSAGE",msg);
+		mv.setViewName("proper");
+		return mv;
+		
+	}
+
+	public India() {
+		super();
+		System.out.println("India class constructor");
+	}
+	
+}

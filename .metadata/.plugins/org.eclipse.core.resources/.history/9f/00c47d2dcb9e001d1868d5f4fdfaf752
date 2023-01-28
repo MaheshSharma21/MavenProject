@@ -1,0 +1,24 @@
+package com.BikkadIT.SpringwebMVCfirstApp.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class welcome {
+	
+	@GetMapping("/GetSimpleMsg")
+	public ModelAndView Simple(@RequestParam String Name) {
+		String msg=" Hello "+Name+" Mahesh Sharma ..How Are You ? ";
+		System.out.println(msg);
+		
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("SimpleMsg",msg);
+		mv.setViewName("swag");
+		return mv;
+		
+	}
+
+}

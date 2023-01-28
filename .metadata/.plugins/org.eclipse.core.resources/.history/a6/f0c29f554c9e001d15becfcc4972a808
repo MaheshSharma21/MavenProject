@@ -1,0 +1,7 @@
+package com.BikkadIT.SpringwebMVCfirstApp.model;
+
+public class colouring {
+
+	private String buscolour;
+	private String 
+}
